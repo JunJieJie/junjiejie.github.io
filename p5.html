@@ -4,18 +4,15 @@
     <style>
       body {
         margin: 0;
+        background-image: url(picture.jpeg);
       }
     </style>
   </head>
   <body>
     <script>
-      var bImage;
       var w = window.innerWidth;
       var h = window.innerHeight;
       
-      function preload() {
-        bImage = loadImage(picture.jpeg);
-      }
       
       function setup() {
         //a canvas that creates a X and a Y
@@ -24,7 +21,6 @@
 
       function draw() {
         clear();
-        background(bImage);
         //rotates around the Y axes when I move my mouse horizontally, dividing it by 100 to decrease mouse sensitivity
         rotateY(mouseY / 100);
         rotateX(mouseX / 100);
