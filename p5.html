@@ -9,6 +9,7 @@
     </style>
   </head>
   <body>
+    <!--
     <script>
       var w = window.innerWidth;
       var h = window.innerHeight;
@@ -20,18 +21,38 @@
       }
 
       function draw() {
-        clear();
         //rotates around the Y axes when I move my mouse horizontally, dividing it by 100 to decrease mouse sensitivity
         rotateY(mouseY / 100);
         rotateX(mouseX / 100);
         //makes a triangle
         triangle(30, 75, 58, 20, 86, 75);
+        //makes the triangle blue
+        fill("blue")
+        //makes a rectangle
         rect(150,200,150,200);
+        //makes the rectangle red
+        fill("red")
         //makes a rectangle
         rect(40,55,40,50);
-        //makes the shapes yellow
+        //makes the rectangle yellow
         fill("yellow");
         noStroke();
+      }
+    </script>-->
+    <script>
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      
+      function setup() {
+        createCanvas(w,h);
+      }
+      
+      function draw() {
+        if (mouseIsPressed) {
+          circle(mouseX,mouseY,100);
+          fill("blue");
+          noStroke();
+        };
       }
     </script>
   </body>
