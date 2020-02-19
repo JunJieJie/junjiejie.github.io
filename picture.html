@@ -13,8 +13,8 @@
       img = loadImage("picture.jpg");
     }
     function setup() {
-      createCanvas(2000,2000);
-      image(img,100,100);
+      createCanvas(window.innerWidth,window.innerHeight);
+      image(img,100,100,window.innerWidth,window.innerHeight);
     }
   </script>
   </body>
