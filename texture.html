@@ -6,7 +6,7 @@
     <script>
       var pic;
       function preload() {
-        pic = loadImage("picture.jpg");
+        pic = loadImage("earth.jpg");
       }
       function setup() {
         createCanvas(window.innerHeight, window.innerWidth, WEBGL);
@@ -18,8 +18,8 @@
   
         texture(pic);
         rotateY(mouseX/10);
-        rotateX(frameCount*2000);
-        box(200,300)
+        rotateX(frameCount*1000);
+        spheres(200,300)
       }
     </script>
   </body>
