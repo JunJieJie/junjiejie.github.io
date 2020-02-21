@@ -13,10 +13,12 @@
       }
       function draw() {
         background(220);
+        
+        
   
         texture(pic);
         rotateY(mouseX/10);
-        rotateX(mouseY/100);
+        rotateX(frameCount*0.10);
         box(200,300)
       }
     </script>
