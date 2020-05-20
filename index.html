@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="p5.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="p5.collision.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blocky Road</title>
+    <style>
+      html,
+      body {
+        overflow-y: hidden;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      * {
+        margin: 0;
+      }
+      .container {
+        padding: 10px;
+        position: absolute;
+        left: 1%;
+      }
+
+      h1,
+      h2 {
+        color: white;
+      }
+
+      .modal {
+        display: block;
+        z-index: 5;
+        width: 50vw;
+        background: #fffafa;
+        border-radius: 10px;
+        margin: 150px auto;
+        padding: 100px;
+        text-align: center;
+        box-shadow: 0 3px 2px #777;
+      }
+
+      canvas {
+        position: absolute;
+        z-index: -1;
+      }
+
+      h3 {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+
+      h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      button {
+        background-color: #4caf50; /* Green */
+        border: none;
+        border-radius: 10px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="points">0</h1>
+    </div>
+    <script src="objects.js"></script>
+    <script src="initialize.js"></script>
+    <script src="gameover.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
